@@ -1,0 +1,314 @@
+/* ===== GOOGLE FONTS IMPORT ===== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ===== RESET AND BASE STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* ===== BODY STYLING ===== */
+body {
+    line-height: 1.6;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.main_container {
+    background-color: #f1f1f1;
+    padding: 60px 290px;
+    max-width: 1920px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+/* ===== HEADER SECTION ===== */
+header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+/* ===== MAIN HEADING ===== */
+h1 {
+    color: #000000;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-top: 65px;
+    margin-bottom: 24px;
+}
+
+/* ===== INTRODUCTION TEXT ===== */
+.intro {
+    color: #666666;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 600px;
+    line-height: 1.7;
+}
+
+/* ===== FAQ SECTION STYLING ===== */
+.faq-section {
+    margin-bottom: 48px;
+    padding: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #d3d3d3;
+    padding-bottom: 48px;
+}
+
+.faq-section:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+/* ===== FAQ QUESTION HEADINGS ===== */
+.faq-section h2 {
+    color: #000000;
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: -0.25px;
+}
+
+/* ===== PARAGRAPH STYLING ===== */
+.faq-section p {
+    margin-bottom: 20px;
+    color: #4a4a4a;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+/* ===== ORDERED AND UNORDERED LISTS ===== */
+.faq-section ol,
+.faq-section ul {
+    margin-left: 24px;
+    margin-bottom: 20px;
+}
+
+.faq-section li {
+    margin-bottom: 12px;
+    color: #4a4a4a;
+    font-size: 1.125rem;
+    line-height: 1.7;
+}
+
+/* Style for bold list items */
+.faq-section li strong {
+    font-weight: 600;
+    color: #000000;
+}
+
+/* ===== LINK STYLING ===== */
+a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+a:hover, a:focus {
+    color: #004499;
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: 2px solid #0066cc;
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+/* ===== RESPONSIVE BREAKPOINTS ===== */
+
+/* Large Desktop: 1280px and above - use default styles */
+
+/* Desktop: 1024px - 1279px */
+@media screen and (max-width: 1279px) {
+    .container {
+        padding: 60px 150px;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+        margin-top: 50px;
+    }
+    
+    .intro {
+        font-size: 1.125rem;
+        max-width: 550px;
+    }
+    
+    .faq-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .faq-section p,
+    .faq-section li {
+        font-size: 1.0625rem;
+    }
+}
+
+/* Small Desktop/Tablet: 768px - 1023px */
+@media screen and (max-width: 1023px) {
+    .container {
+        padding: 50px 80px;
+    }
+    
+    h1 {
+        font-size: 2.25rem;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .intro {
+        font-size: 1.125rem;
+        max-width: 500px;
+    }
+    
+    header {
+        margin-bottom: 60px;
+    }
+    
+    .faq-section {
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+    }
+    
+    .faq-section h2 {
+        font-size: 1.375rem;
+    }
+    
+    .faq-section p,
+    .faq-section li {
+        font-size: 1rem;
+    }
+}
+
+/* Tablet: 640px - 767px */
+@media screen and (max-width: 767px) {
+    .container {
+        padding: 40px 40px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+        margin-top: 30px;
+        margin-bottom: 16px;
+    }
+    
+    .intro {
+        font-size: 1.0625rem;
+        max-width: 450px;
+    }
+    
+    header {
+        margin-bottom: 50px;
+    }
+    
+    .faq-section {
+        margin-bottom: 36px;
+        padding-bottom: 36px;
+    }
+    
+    .faq-section h2 {
+        font-size: 1.25rem;
+    }
+    
+    .faq-section p,
+    .faq-section li {
+        font-size: 1rem;
+    }
+    
+    .faq-section ol,
+    .faq-section ul {
+        margin-left: 20px;
+    }
+}
+
+/* Mobile: 480px - 639px */
+@media screen and (max-width: 639px) {
+    .container {
+        padding: 32px 24px;
+    }
+    
+    h1 {
+        font-size: 1.75rem;
+        margin-top: 20px;
+        margin-bottom: 16px;
+    }
+    
+    .intro {
+        font-size: 1rem;
+        max-width: 400px;
+    }
+    
+    header {
+        margin-bottom: 40px;
+    }
+    
+    .faq-section {
+        margin-bottom: 32px;
+        padding-bottom: 32px;
+    }
+    
+    .faq-section h2 {
+        font-size: 1.125rem;
+    }
+    
+    .faq-section p,
+    .faq-section li {
+        font-size: 0.9375rem;
+    }
+    
+    .faq-section ol,
+    .faq-section ul {
+        margin-left: 18px;
+    }
+}
+
+/* Small Mobile: below 480px */
+@media screen and (max-width: 479px) {
+    .container {
+        padding: 24px 16px;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+        margin-top: 15px;
+        margin-bottom: 12px;
+    }
+    
+    .intro {
+        font-size: 0.9375rem;
+        max-width: 350px;
+    }
+    
+    header {
+        margin-bottom: 32px;
+    }
+    
+    .faq-section {
+        margin-bottom: 28px;
+        padding-bottom: 28px;
+    }
+    
+    .faq-section h2 {
+        font-size: 1rem;
+    }
+    
+    .faq-section p,
+    .faq-section li {
+        font-size: 0.875rem;
+    }
+    
+    .faq-section ol,
+    .faq-section ul {
+        margin-left: 16px;
+    }
+}
